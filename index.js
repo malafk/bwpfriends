@@ -1,10 +1,10 @@
+require('dotenv').config()
 const mineflayer = require('mineflayer');
 var navigatePlugin = require('mineflayer-navigate')(mineflayer);
 const ChatMessage = require('prismarine-chat')('1.8')
 const express = require('express');
 const path = require('path');
 const fetch = require('node-fetch');
-require('dotenv').config()
 
 
 let app = express();
