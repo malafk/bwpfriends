@@ -1,0 +1,22 @@
+{
+  "name": "bwpfriends",
+  "version": "1.0.0",
+  "description": "a bot to friend everyone in lobbiesd",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "mal",
+  "license": "ISC",
+  "dependencies": {
+    "dotenv": "^10.0.0",
+    "ejs": "^3.1.6",
+    "express": "^4.17.1",
+    "lowdb": "^1.0.0",
+    "mineflayer": "^2.40.1",
+    "mineflayer-navigate": "0.0.10",
+    "navigate": "^0.3.6",
+    "node-fetch": "^2.6.1",
+    "path": "^0.12.7"
+  }
+}

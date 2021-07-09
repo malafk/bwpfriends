@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>bwpfriends's bwp friends</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.1/css/bulma.min.css">
+</head>
+<body>
+<section class="section">
+    <div class="container">
+        <h1 class="title">
+            bwpfriends's bedwars practice friends (<strong><%= friendsIgn.length %></strong>)
+        </h1>
+        <p class="subtitle">
+            /f bwpfriends to be on the list! (updates every 30 seconds)
+        </p>
+
+        <div style="display:inline-block;">
+        <%for (var result1 in friendsIgnColor){%>
+            <%if(friendsIgnColor[result1].includes('§7')) {%>
+            <img src="https://mc-heads.net/avatar/<%=friendsIgnColor[result1].replace(/[§&][0-9A-z]/g, "")%>" style="width:45px;height:45px;">
+            <div style="display: inline-block; vertical-align: top;">[Default] <%=friendsIgnColor[result1].replace(/[§&][0-9A-z]/g, "")%></div>
+            <%}%>
+            <%if(friendsIgnColor[result1].includes('§9')) {%>
+            <img src="https://mc-heads.net/avatar/<%=friendsIgnColor[result1].replace(/[§&][0-9A-z]/g, "")%>" style="width:45px;height:45px;">
+            <div style="display: inline-block; vertical-align: top;">[Expert] <%=friendsIgnColor[result1].replace(/[§&][0-9A-z]/g, "")%></div>
+            <%}%>
+            <%if(friendsIgnColor[result1].includes('§2')) {%>
+            <img src="https://mc-heads.net/avatar/<%=friendsIgnColor[result1].replace(/[§&][0-9A-z]/g, "")%>" style="width:45px;height:45px;">
+            <div style="display: inline-block; vertical-align: top;">[Adept] <%=friendsIgnColor[result1].replace(/[§&][0-9A-z]/g, "")%></div>
+            <%}%>
+            <%if(friendsIgnColor[result1].includes('§6')) {%>
+            <img src="https://mc-heads.net/avatar/<%=friendsIgnColor[result1].replace(/[§&][0-9A-z]/g, "")%>" style="width:45px;height:45px;">
+            <div style="display: inline-block; vertical-align: top;">[Master] <%=friendsIgnColor[result1].replace(/[§&][0-9A-z]/g, "")%></div>
+            <%}%>
+            <%if(friendsIgnColor[result1].includes('§e')) {%>
+            <img src="https://mc-heads.net/avatar/<%=friendsIgnColor[result1].replace(/[§&][0-9A-z]/g, "")%>" style="width:45px;height:45px;">
+            <div style="display: inline-block; vertical-align: top;"><font color="yellow">[Moderator] <%=friendsIgnColor[result1].replace(/[§&][0-9A-z]/g, "")%></font></div>
+            <%}%>
+            <br>
+            <%}%>
+    </div>
+</section>
+</body>
+</html>
+
